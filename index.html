@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <title>TOKM Website</title>
     <style>
-        @keyframes moveUp {
+        @keyframes slideUp {
             from {
-                transform: translateY(50px); /* Initial position */
-                opacity: 0; /* Initial opacity */
+                transform: translateY(100%); /* Start from the bottom of the viewport */
+                opacity: 0; /* Start with opacity 0 */
             }
             to {
-                transform: translateY(0); /* Final position */
-                opacity: 1; /* Final opacity */
+                transform: translateY(0); /* Move to the middle */
+                opacity: 1; /* Fully visible */
             }
         }
 
@@ -30,12 +30,12 @@
         .content {
             text-align: center;
             color: white; /* For better visibility of content on the gradient background */
+            animation: slideUp 1s ease forwards; /* Apply the animation */
         }
 
         .logo {
             margin-bottom: 20px; /* Adjust the margin as needed */
             filter: drop-shadow(0px 0px 10px white); /* White glow effect */
-            animation: moveUp 1.5s ease forwards; /* Apply the animation */
         }
 
         .start-shopping-btn {
@@ -57,9 +57,9 @@
 
 <body>
     <div class="content">
-        <img src="TOKM.png" alt="TOKM Logo" class="logo">
-        <h1>Welcome to TOKM</h1>
-        <a href="https://tokmcncs.github.io/start" class="start-shopping-btn">Start Shopping</a>
+        <img src="TOKM.png" alt="TOKM Logo" class="logo" style="animation: slideUp 1s ease forwards;">
+        <h1 style="animation: slideUp 1s ease forwards;">Welcome to TOKM</h1>
+        <a href="https://tokmcncs.github.io/start" class="start-shopping-btn" style="animation: slideUp 1s ease forwards;">Start Shopping</a>
     </div>
 </body>
 
