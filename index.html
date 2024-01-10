@@ -5,6 +5,17 @@
     <meta charset="UTF-8">
     <title>TOKM Website</title>
     <style>
+        @keyframes moveUp {
+            from {
+                transform: translateY(50px); /* Initial position */
+                opacity: 0; /* Initial opacity */
+            }
+            to {
+                transform: translateY(0); /* Final position */
+                opacity: 1; /* Final opacity */
+            }
+        }
+
         body {
             display: flex;
             justify-content: center;
@@ -13,6 +24,7 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background: linear-gradient(to bottom, #006400, #004d00); /* Dark green gradient */
+            scroll-behavior: smooth; /* Smooth scrolling behavior */
         }
 
         .content {
@@ -23,9 +35,10 @@
         .logo {
             margin-bottom: 20px; /* Adjust the margin as needed */
             filter: drop-shadow(0px 0px 10px white); /* White glow effect */
+            animation: moveUp 1.5s ease forwards; /* Apply the animation */
         }
 
-        .get-started-btn {
+        .start-shopping-btn {
             padding: 10px 20px;
             background-color: #fff;
             color: #000;
@@ -36,7 +49,7 @@
             cursor: pointer;
         }
 
-        .get-started-btn:hover {
+        .start-shopping-btn:hover {
             background-color: #ddd;
         }
     </style>
@@ -46,8 +59,7 @@
     <div class="content">
         <img src="TOKM.png" alt="TOKM Logo" class="logo">
         <h1>Welcome to TOKM</h1>
-        <p>This is the TOKM website content. You can add your information, images, and other elements here.</p>
-        <a href="https://tokmcncs.github.io/start" class="get-started-btn">Get Started</a>
+        <a href="https://tokmcncs.github.io/start" class="start-shopping-btn">Start Shopping</a>
     </div>
 </body>
 
