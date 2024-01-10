@@ -12,7 +12,7 @@
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #004d00, #002200); /* Dark green gradient */
+            background: linear-gradient(to bottom, #00FF00, #008000); /* Green gradient */
         }
 
         .content {
@@ -22,6 +22,22 @@
 
         .logo {
             margin-bottom: 20px; /* Adjust the margin as needed */
+            filter: drop-shadow(0px 0px 10px white); /* White glow effect */
+        }
+
+        .get-started-btn {
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .get-started-btn:hover {
+            background-color: #ddd;
         }
     </style>
 </head>
@@ -31,6 +47,7 @@
         <img src="TOKM.png" alt="TOKM Logo" class="logo">
         <h1>Welcome to TOKM</h1>
         <p>This is the TOKM website content. You can add your information, images, and other elements here.</p>
+        <a href="https://tokmcncs.github.io/start" class="get-started-btn">Get Started</a>
     </div>
 </body>
 
