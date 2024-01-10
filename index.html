@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TOKM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="content">
+        <img src="TOKM.png" alt="TOKM Logo" class="logo">
+        <a href="https://tokmcncs.github.io/start" class="start-shopping-btn" id="startShoppingBtn">Start Shopping</a>
+    </div>
+    
+    <!-- Footer section -->
+    <footer>
+        &copy; 2024 TOKM. All rights reserved.
+    </footer>
+
+    <script>
+        const button = document.getElementById('startShoppingBtn');
+
+        let hue = 0;
+        setInterval(() => {
+            hue = (hue + 1) % 360;
+            button.style.color = `hsl(${hue}, 100%, 50%)`;
+        }, 50); // Change color every 50 milliseconds for a smoother transition
+    </script>
+</body>
+
+</html>
